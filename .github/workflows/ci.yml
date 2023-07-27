@@ -9,9 +9,7 @@ jobs:
       with:
         node-version: 16
     - run: npm install
-    - run: npm run build
+    - run: npm run build && cat .next/server/pages/index.html
       env:
         DOTENV_KEY: ${{ secrets.DOTENV_KEY }}
-  cat:
-    - run: cat .next/server/pages/index.html
 
