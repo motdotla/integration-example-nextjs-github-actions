@@ -12,4 +12,6 @@ jobs:
     - run: npm run build
       env:
         DOTENV_KEY: ${{ secrets.DOTENV_KEY }}
+  cat:
+    - run: cat .next/server/pages/index.html
 
